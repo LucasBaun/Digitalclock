@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+  <style>
+    body{
+      background-color: #E5C687;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .t{
+      color: #09814A;
+      font-size: 1000%;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 900;
+      text-shadow: 4px 4px #2D4739;
+    }
+
+    .x {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 50vh;
+  flex-direction: column;
+}
+.xs {
+display: flex;
+align-items: center;
+justify-content: center;
+/* height: 100vh; */
+flex-direction: column;
+}
+
+
+.r{
+  color: #09814A;
+  font-family: 'Poppins', sans-serif;
+  text-shadow: 1.5px 1.5px #2D4739;
+  font-size: 200%;
+  font-weight: 700;
+}
+
+  </style>
+<script>
+function startTime() {
+    var today = new Date();
+    var h = today.getHours();
+    var m = today.getMinutes();
+    var s = today.getSeconds();
+    m = checkTime(m);
+    s = checkTime(s);
+    document.getElementById('txt').innerHTML =
+    h + ":" + m + ":" + s;
+
+    var t = setTimeout(startTime, 250);
+}
+function checkTime(i) {
+    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+    return i;
+}
+</script>
+</head>
+
+<body onload="startTime()">
+<div class="x">
+  <div id="txt" class="t"></div>
+
+</div>
+<div class="xs">
+  <div class="r" id="text">
+  </div>
+</div>
+
+</body>
+</html>
