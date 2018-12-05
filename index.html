@@ -2,12 +2,17 @@
 <html>
 <head>
 <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
   <style>
     body{
       background-color: #E5C687;
       height: 100vh;
       margin: 0;
     }
+
+
 
     .t{
       color: #09814A;
@@ -18,28 +23,47 @@
     }
 
     .x {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  height: 50vh;
-  flex-direction: column;
-}
-.xs {
-display: flex;
-align-items: center;
-justify-content: center;
-/* height: 100vh; */
-flex-direction: column;
-}
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 50vh;
+    flex-direction: column;
+  }
 
+  .xs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
 
 .r{
-  color: #09814A;
-  font-family: 'Poppins', sans-serif;
-  text-shadow: 1.5px 1.5px #2D4739;
-  font-size: 200%;
-  font-weight: 700;
-}
+    color: #09814A;
+    font-family: 'Poppins', sans-serif;
+    text-shadow: 1.5px 1.5px #2D4739;
+    font-size: 200%;
+    font-weight: 700;
+  }
+  </style>
+
+<script>
+function startTime() {
+    var quote = [
+      "1f you c4n r34d 7h15, you r34lly n33d 2 g37 l41d",
+      "I want to kill the hottest person alive… But suicide is a crime!",
+      "Save paper, don’t do home work.",
+      "Save water and shower together",
+      "Adults are just kids with money.",
+      "Why do they put pizza in a square box?",
+      "Don’t cry because its over, smile because his new girlfriend looks like a horse.",
+      "If the grass is greener on the other side, you can bet the water bill is higher.",
+      "Dear maths…!! Please grow up and solve your problems yourself!!!",
+      "Who says nothing is impossible. I’ve been doing nothing for years...",
+      "Never apologize for saying what you feel cos its apologizing for being real.",
+      "A good listener is usually thinking about something else.",
+      "No text at the moment"
+  ];
+
 
   </style>
 <script>
@@ -52,6 +76,33 @@ function startTime() {
     s = checkTime(s);
     document.getElementById('txt').innerHTML =
     h + ":" + m + ":" + s;
+    var t = setTimeout(startTime, 250);
+
+    if (00 <= m && m < 04) {
+      document.getElementById('text').innerHTML = quote[0];
+    } else if (04 < m && m < 09) {
+      document.getElementById('text').innerHTML = quote[1];
+    } else if (09 < m && m < 14) {
+      document.getElementById('text').innerHTML = quote[2];
+    } else if (14 < m && m < 19) {
+      document.getElementById('text').innerHTML = quote[4];
+    } else if (19 < m && m < 24){
+      document.getElementById('text').innerHTML = quote[5];
+    } else if (24 < m && m < 29){
+      document.getElementById('text').innerHTML = quote[6];
+    } else if (29 < m && m < 34){
+      document.getElementById('text').innerHTML = quote[7];
+    } else if (34 < m && m < 39){
+      document.getElementById('text').innerHTML = quote[8];
+    } else if (39 < m && m < 44){
+      document.getElementById('text').innerHTML = quote[9];
+    } else if (44 < m && m < 49){
+      document.getElementById('text').innerHTML = quote[10];
+    } else if (49 < m && m < 54){
+      document.getElementById('text').innerHTML = quote[11];
+    } else if (54 < m && m < 59){
+      document.getElementById('text').innerHTML = quote[12];
+    }
 
     var t = setTimeout(startTime, 250);
 }
