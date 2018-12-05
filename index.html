@@ -4,12 +4,16 @@
 <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
   <style>
     body{
       background-color: #E5C687;
       height: 100vh;
       margin: 0;
     }
+
+
+
     .t{
       color: #09814A;
       font-size: 1000%;
@@ -17,27 +21,31 @@
       font-weight: 900;
       text-shadow: 4px 4px #2D4739;
     }
+
     .x {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  height: 50vh;
-  flex-direction: column;
-}
-.xs {
-display: flex;
-align-items: center;
-justify-content: center;
-flex-direction: column;
-}
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 50vh;
+    flex-direction: column;
+  }
+
+  .xs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
 .r{
-  color: #09814A;
-  font-family: 'Poppins', sans-serif;
-  text-shadow: 1.5px 1.5px #2D4739;
-  font-size: 200%;
-  font-weight: 700;
-}
+    color: #09814A;
+    font-family: 'Poppins', sans-serif;
+    text-shadow: 1.5px 1.5px #2D4739;
+    font-size: 200%;
+    font-weight: 700;
+  }
   </style>
+
 <script>
 function startTime() {
     var quote = [
@@ -56,6 +64,10 @@ function startTime() {
       "No text at the moment"
   ];
 
+
+  </style>
+<script>
+function startTime() {
     var today = new Date();
     var h = today.getHours();
     var m = today.getMinutes();
@@ -91,6 +103,8 @@ function startTime() {
     } else if (54 < m && m < 59){
       document.getElementById('text').innerHTML = quote[12];
     }
+
+    var t = setTimeout(startTime, 250);
 }
 function checkTime(i) {
     if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
