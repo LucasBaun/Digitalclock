@@ -8,16 +8,16 @@
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
   <style>
     body{
-      background-color: #E5C687;
+      background-color: #4CC9F0;
       height: 100vh;
       margin: 0;
     }
     .t{
-      color: #09814A;
+      color: #F72585;
       font-size: 1000%;
       font-family: 'Poppins', sans-serif;
       font-weight: 900;
-      text-shadow: 4px 4px #2D4739;
+      text-shadow: 4px 4px #7209B7;
     }
     .x {
   display: flex;
@@ -33,9 +33,9 @@ justify-content: center;
 flex-direction: column;
 }
 .r{
-  color: #09814A;
+  color: #F72585;
   font-family: 'Poppins', sans-serif;
-  text-shadow: 1.5px 1.5px #2D4739;
+  text-shadow: 1.5px 1.5px #7209B7;
   font-size: 200%;
   font-weight: 700;
 }
@@ -45,17 +45,17 @@ flex-direction: column;
 	 text-align: right;
    bottom: 0;
    width: 100%;
-   color: #09814A;
+   color: #F72585;
 }
 
 a i{
 	padding: 15px;
-	color: #09814A;
+	color: #F72585;
 	transition: 300ms;
 }
 
 a i:hover{
-	color: #09814A;
+	color: #F72585;
 	transition: 300ms;
 	font-size: 1000%;
 }
@@ -76,7 +76,8 @@ function startTime() {
       "Who says nothing is impossible. I’ve been doing nothing for years...",
       "Never apologize for saying what you feel cos its apologizing for being real.",
       "A good listener is usually thinking about something else.",
-      "No text at the moment"
+      "No text at the moment",
+      "13:37? if so RUN!"
   ];
 
     var today = new Date();
@@ -103,7 +104,11 @@ function startTime() {
       document.getElementById('text').innerHTML = quote[6];
     } else if (29 < m && m < 35){
       document.getElementById('text').innerHTML = quote[7];
-    } else if (34 < m && m < 40){
+    } else if (34 < m && m < 37){
+      document.getElementById('text').innerHTML = quote[13];
+    } else if (36 < m && m < 38){
+      document.getElementById('text').innerHTML = quote[7];
+    } else if (37 < m && m < 40){
       document.getElementById('text').innerHTML = quote[8];
     } else if (39 < m && m < 45){
       document.getElementById('text').innerHTML = quote[9];
